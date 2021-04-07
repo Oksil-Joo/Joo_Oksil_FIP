@@ -1,0 +1,187 @@
+
+.hidden
+{
+	display: none;
+}
+
+body {
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 16px;
+ font-weight: 800;
+ text-align: center;
+ }
+
+ a {
+	 text-decoration: none;
+ }
+
+.container {
+	background-color: #555;
+}
+
+/* Nav */
+.mainNavigation li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.mainNavigation li {
+background-color: #000;
+border-radius: 30px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.box {
+	background-color: #666;
+	border-radius: 15px;
+	/* padding: 20px; */
+	color: #fff;
+	text-align: center;
+	margin: 0PX 20px;
+}
+.mainImage {
+		line-height: 200px;
+		margin-bottom: 10px;
+}
+.mainNavigation {
+		margin-bottom: 10px;
+}
+.LogoImage {
+		line-height:157px;
+		margin-bottom: 10px;
+}
+
+.mainDes {
+	line-height: 126px;
+		margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.promo01 {
+	line-height: 377px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.promo02 {
+	line-height: 377px;
+		margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.promo03 {
+	line-height: 377px;
+		margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footerNav {
+	height: 211px;
+	margin-top: 10px;
+}
+@media screen and (min-width:800px){
+	.boxContainer{
+		max-width: 1200px;
+		display:grid;
+		grid-template-columns: repeat(12, minmax(0,1fr));
+		grid-column-gap: 15px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.container {
+		background-color: #666;
+	}
+
+	.mainNavigation {
+	grid-column: 5/-1;
+	margin-top: 10px;
+
+	}
+
+	.burgerCon {
+	margin: 0 auto;
+	padding-top: 50px;
+
+	}
+
+.burgerCon ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.burgerCon li a {
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	border-radius: 30px;
+	height: 16px;
+	/* flex: 1 0 100px; */
+}
+
+.LogoImage {
+		order:-1;
+		grid-column: 1/4;
+		line-height: 157px;
+		margin-top: 10px;
+		background-color: #000;
+	}
+
+
+	main, header, footer {
+	display: contents;
+}
+
+	.mainImage {
+		grid-column: 1/-1;
+		line-height: 400px;
+		background-color: #000;
+		margin-bottom: 50px;
+	}
+
+	.mainDes {
+		grid-column: 3/11;
+		line-height: 143px;
+		margin-bottom: 50px;
+		background-color: white;
+		color: black;
+		background-color: #eee;
+		text-align: center;
+	}
+
+	.promo01 {
+		grid-column: 1/5;
+		line-height: 377px;
+		background-color: black;
+		margin-bottom: 50px;
+	}
+
+	.promo02 {
+		grid-column: 5/9;
+		line-height: 377px;
+		background-color: black;
+		margin-bottom: 50px;
+	}
+
+	.promo03 {
+		grid-column: 9/13;
+		line-height: 377px;
+		background-color: black;
+		margin-bottom: 50px;
+	}
+
+	.footerNav {
+		grid-column: 1/-1;
+		line-height: 250px;
+		text-align: center;
+
+	}
+
+}
