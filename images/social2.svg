@@ -1,0 +1,18 @@
+<svg id="social2" data-name="social2" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #92845e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+      #social2 { cursor: pointer; }
+      #social2:hover .cls-1 { fill: #b53325 !important; }
+    </style>
+  </defs>
+  <title>social2</title>
+  <circle class="cls-1" cx="41.5" cy="41.5" r="41.5"/>
+  <path class="cls-2" d="M37.5,56.5h6v-15H48l.55-6H43.73V33.1a1.27,1.27,0,0,1,1.33-1.44h3.36V26.52l-4.63,0c-5.15,0-6.31,3.83-6.31,6.29V35.5h-3v6h3Z"/>
+</svg>
