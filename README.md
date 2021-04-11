@@ -2,6 +2,31 @@
 ![readme](https://user-images.githubusercontent.com/72535594/113856045-ba233b80-976e-11eb-83a0-917af770ea12.png)
 This is Oksil’s final integrated assignment. I create a five-page website based on the HTML/CSS/JAVA Script. The work is responsible for designing, coding, and semantically tagging a responsive HTML5 website. The theme of my website is **BALLA Beer**. The inspiration for my creation comes from Alexander Keith's beer, which is one of Canada's top 10 favorite brands. Initially, I created a Balla logo, and then I built a style guide and packaging with created it. I created a three-beer bottle and cans using Cinema 4d, I made an advertisement video using After effects.
 
+### Sources
+* Alexander Keith's Site [Source](https://www.keiths.ca/age-verification?destination=/)
+
+### inspiration
+This design of the Balla logo is from the Balla Foundation. The new Balla logo was created by applying the characteristic colour, typography, pattern, and style of the Alexander Keith's beer brand.
+
+### Colors
+* Main colour is #b53325.
+* Sub colour is #92845e and #af9f73.
+
+### AUTHORS
+Designed and developed by Oksil Joo.
+
+### Tools used
+* photoshop : designed promotional product pictures.
+* Illustrator: created logo and labels of Balla beer.
+* InDesign: build a style guide.
+* Cinema 4D: Models bottles and cans.
+* AffterEffets: created an advertisement video.
+* Html5: built a responsive web page design.
+* CSS3 : grid and media query used.
+* JavaScript: Hamburger button setting and product introduction.
+* Markdown
+
+
 ### Prerequisites
 All you need is a **computer** with an internet connection and a browser.
 

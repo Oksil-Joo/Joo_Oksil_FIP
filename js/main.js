@@ -33,24 +33,21 @@ function animateBanner(event) {
   if (event.target.className.includes('sigilContainer')) {
     let multiplier = event.target.dataset.offset,
 
+        offsetwidth = 792;
 
-          offsetwidth = 792;
+        banner.style.right = `${multiplier * offsetwidth}px`;
+  }
+}
 
-                banner.style.right = `${multiplier * offsetwidth}px`;
-              }
-          }
+function popLightBox(event) {
+  if (event.target.className.includes('sigilContainer')) {
 
-            function popLightBox(event) {
-              if (event.target.className.includes('sigilContainer')) {
-
-                let targetballa = event.target.className.split(" ")[1];
-
-                setballaData(ballaInfo[event.target.dataset.offset][0],
-                    ballaInfo[event.target.dataset.offset][1]);
-                  }
-          }
+      setballaData(ballaInfo[event.target.dataset.offset][0],
+                  ballaInfo[event.target.dataset.offset][1]);
+  }
+}
   button.addEventListener("click", hamburgerMenu);
   sigils.addEventListener('click', animateBanner);
   sigils.addEventListener('click', popLightBox);
 
-  })();
+})();
