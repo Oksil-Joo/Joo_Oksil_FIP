@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Balla Beer - Product Page</title>
+  <title>Balla Beer - Products</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -16,15 +16,16 @@
 <body>
 
 <!-- Here are logo and menus -->
-  <h1 class="hidden">Balla Beer HomeMainpage</h1>
+  <h1 class="hidden">Balla Beer Products</h1>
   <div class="container">
     <header class="boxContainer">
 
       <h1 class="hidden">Main Navigation</h1>
       <section class="mainNavigation">
         <div id="topMenu">
-        <img src="images/LeftArrow.svg" alt="back">
-          <h2>Home</h2>
+          <a href="Index.html">
+          <img src="images/LeftArrow.svg" alt="back"></a>
+          <h2>Products</h2>
           <button id="button"></button>
         </div>
         <div id="burgerCon">
@@ -32,7 +33,7 @@
             <li><a href="Index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Products.html">PRODUCT</a></li>
-            <li><a href="Advertisement.html">ADVERTISEMENT</a></li>
+            <li><a href="Advertisements.html">ADVERTISEMENT</a></li>
             <li><a href="Contact.html">CONTACT</a></li>
           </ul>
         </div>
@@ -54,38 +55,45 @@
       <!-- Here are main image and description -->
       <h1 class="hidden">main Image</h1>
       <section class="mainImage">
-        <div class="HomeImageCon">
+        <div class="ProImageCon">
           <div class="main_Description">
-            <h3>Welcome to Balla Beer</h3>
-            <p>Balla beer is one of Canada’s top 10 favourite brands and has 200 years of history and unique ale beer processing technology, which has a unique taste and aroma scent.</p>
+            <h3>BALLA MALL</h3>
+            <p>FREE DELIVERY, $50 MINIMUM ORDER</p>
           </div>
         </div>
       </section>
       <section class="title">
-        <h3>BALLA BEER</h3>
+        <h3>You may also like</h3>
       </section>
     <!-- Here are promo Images -->
-      <h1 class="hidden">Promo Images</h1>
-      <section class="promo01">
-        <a href="product.html">
-          <div class="ProHome_screen">
-            <div class="top"> <br> RED <br> AMBER <br> ALE </div>
+      <h1 class="hidden">Product Images</h1>
+      <section class="ProductCon">
+        <div class="proBigCon">
+
+         <div id="productImageCon">
+          <div id="beerImages" style="right: 0">
+             <img src="images/adver_00recreate.jpg" alt="balla">
+             <img src="images/adver_01.jpg" alt="red">
+             <img src="images/adver_02.jpg" alt="light">
+             <img src="images/adver_03.jpg" alt="india">
+             <img src="images/adver_04.jpg" alt="set">
+
           </div>
-        </a>
-       </section>
-      <section class="promo02">
-        <a href="product.html">
-          <div class="ProHome2_screen">
-            <div class="top"><br> INDIA <br> FALE <br> ALE </div>
-          </div>
-        </a>
+        </div>
+      </div>
       </section>
-      <section class="promo03">
-        <a href="product.html">
-          <div class="ProHome3_screen">
-            <div class="top"> <br> LIGHT <br> ALE </div>
-          </div>
-        </a>
+      <section class="productDes">
+        <nav id="bottomNav">
+          <ul id="navList">
+            <li> <div class="sigilContainer balla" data-offset="0"></div> </li>
+            <li> <div class="sigilContainer red" data-offset="1"></div> </li>
+            <li> <div class="sigilContainer light" data-offset="2"></div> </li>
+            <li> <div class="sigilContainer india" data-offset="3"></div> </li>
+            <li> <div class="sigilContainer set" data-offset="4"></div> </li>
+          </ul>
+        </nav>
+        <h4></h4>
+        <p class="pro-info"></p>
       </section>
     </main>
 

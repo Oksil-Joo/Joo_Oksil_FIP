@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Balla Beer - Product Page</title>
+  <title>Balla Beer - Contact</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -16,15 +16,15 @@
 <body>
 
 <!-- Here are logo and menus -->
-  <h1 class="hidden">Balla Beer HomeMainpage</h1>
+  <h1 class="hidden">Balla Beer Contact</h1>
   <div class="container">
     <header class="boxContainer">
 
       <h1 class="hidden">Main Navigation</h1>
       <section class="mainNavigation">
-        <div id="topMenu">
-        <img src="images/LeftArrow.svg" alt="back">
-          <h2>Home</h2>
+        <div id="topMenu"><a href="Index.html">
+        <img src="images/LeftArrow.svg" alt="back"></a>
+          <h2>Contact</h2>
           <button id="button"></button>
         </div>
         <div id="burgerCon">
@@ -52,41 +52,46 @@
 <div class="boxContainermain">
     <main>
       <!-- Here are main image and description -->
-      <h1 class="hidden">main Image</h1>
+      <h1 class="hidden">Contact main Image</h1>
       <section class="mainImage">
-        <div class="HomeImageCon">
+        <div class="ContactImageCon">
           <div class="main_Description">
-            <h3>Welcome to Balla Beer</h3>
-            <p>Balla beer is one of Canada’s top 10 favourite brands and has 200 years of history and unique ale beer processing technology, which has a unique taste and aroma scent.</p>
+            <h3>Get in Touch</h3>
+            <p>FREE DELIVERY, $50 MINIMUM ORDER
+Make sure to have your order number, delivery address and time available for verification. </p>
           </div>
         </div>
       </section>
       <section class="title">
-        <h3>BALLA BEER</h3>
+        <h3>Contact Us</h3>
       </section>
     <!-- Here are promo Images -->
       <h1 class="hidden">Promo Images</h1>
-      <section class="promo01">
-        <a href="product.html">
-          <div class="ProHome_screen">
-            <div class="top"> <br> RED <br> AMBER <br> ALE </div>
-          </div>
-        </a>
-       </section>
-      <section class="promo02">
-        <a href="product.html">
-          <div class="ProHome2_screen">
-            <div class="top"><br> INDIA <br> FALE <br> ALE </div>
-          </div>
-        </a>
-      </section>
-      <section class="promo03">
-        <a href="product.html">
-          <div class="ProHome3_screen">
-            <div class="top"> <br> LIGHT <br> ALE </div>
-          </div>
-        </a>
-      </section>
+      <section class="formCon">
+        <div id="formMessage">
+						<form action="form.php" method="post">
+							<p>
+								<label for="your_name">Your Name: </label>  <br>
+								<input type="text" id="your_name" name="name" size="100">
+							</p>
+							<p>
+								<label for="address">Email Address: </label> <br>
+								<input type="text" id="address" name="address" size="100">
+							</p>
+							<p>
+								<label for="telephone">Telephone Number: </label> <br>
+								<input type="text" id="telephone" name="telephone"  size="100">
+							</p>
+							<p>
+								<label for="message">Message </label> <br>
+								<textarea name="message" id="message" rows="5" cols="87"></textarea>
+							</p>
+              <p id="send">
+								<button type="submit" name="submitbutton">Submit</button>
+              </p>
+						</form>
+					</div>
+        </section>
     </main>
 
 
