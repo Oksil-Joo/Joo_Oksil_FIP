@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="15.714" viewBox="0 0 22 15.714">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="22" height="15.714" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Left_Arrow" data-name="Left Arrow" clip-path="url(#clip-path)">
+    <path id="Left_Arrow-2" data-name="Left Arrow" d="M22.429,12.286H7.343l3.63-3.63a1.49,1.49,0,0,0,.456-1.084A1.59,1.59,0,0,0,9.857,6a1.482,1.482,0,0,0-1.084.456L2.52,12.708A1.506,1.506,0,0,0,2,13.857a1.425,1.425,0,0,0,.508,1.137l6.265,6.265a1.482,1.482,0,0,0,1.084.456,1.589,1.589,0,0,0,1.571-1.571,1.49,1.49,0,0,0-.456-1.084l-3.63-3.63H22.429a1.571,1.571,0,0,0,0-3.143Z" transform="translate(-2 -6)" fill="#fff"/>
+  </g>
+</svg>
