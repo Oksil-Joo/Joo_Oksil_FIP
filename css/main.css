@@ -4,7 +4,8 @@
 	display: none;
 }
 img, embed, object, video{
-	max-width: 100%}
+	max-width: 100%;
+}
 
 html{
 		box-sizing: border-box;
@@ -64,10 +65,25 @@ body {
 	border: 0px;
 	width: 20px;
 	height: 20px;
+	padding: 0px;
+	margin: 0;
 	transition: all .1s ease;
 }
 .mainNavigation button.expanded {
 	transform: rotate(90deg);
+}
+.mainNavigation button:hover {
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0;
+	transition: all .1s ease;
+}
+.LogoImage {
+		padding: 10px;
+		background-color: #fff;
 }
 
 #burgerCon li {
@@ -105,7 +121,7 @@ margin: 0;
 	padding-bottom: 10px;
 	display: none;
 }
-/* top navigation */
+/* Home Main Image */
 .HomeImageCon {
 	background-image: url(../images/Main_Home.png);
 	background-repeat: no-repeat;
@@ -114,25 +130,62 @@ margin: 0;
 	height: 380px;
 	padding-top: 100px;
 }
-.wrapper {
-	width: 83px;
-	height: 83px;
-	padding: 0px;
-	margin: 0px auto;
+
+.ContactImageCon {
+	background-image: url(../images/Main_Contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 380px;
+	padding-top: 100px;
+}
+.AboutImageCon {
+	background-image: url(../images/Main_About.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 380px;
+	padding-top: 100px;
+}
+.AdverImageCon {
+	background-image: url(../images/Main_Advertisement.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 380px;
+	padding-top: 100px;
+}
+.ProImageCon {
+	background-image: url(../images/Main_Product.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 380px;
+	padding-top: 100px;
 }
 
-.wrapper object {
-	width: 100%;
-}
+/* Home Main Image */
 
 @media screen and (min-resolution: 200dpi),
 				screen and (min-resolution: 1.25dppx) {
 					.HomeImageCon {
 						background-image: url(../images/Main_Home.png);
 					}
+					.ContactImageCon {
+						background-image: url(../images/Main_Contact.png);
+					}
+					.AboutImageCon {
+						background-image: url(../images/Main_About.png);
+					}
+					.AdverImageCon {
+						background-image: url(../images/Main_Advertisement.png);
+					}
+					.ProImageCon {
+						background-image: url(../images/Main_Product.png);
+					}
 				}
 .main_Description {
-		background-color: rgb(255, 255, 255, 0.4);
+		background-color: rgb(255, 255, 255, 0.5);
 		max-width: 420px;
 		border-radius: 31px;
 		margin: 0 auto;
@@ -150,11 +203,16 @@ margin: 0;
 	color: #000;
 	line-height: 1.3;
 }
+@media screen and (min-width:600px){
+ .main_Description{
+	 max-width: 70%;
+ }
 
-.LogoImage {
-		padding: 10px;
-		background-color: #fff;
 }
+
+
+/* content title */
+
 .title{
 	grid-column: 1/-1;
 	margin-bottom: 20px;
@@ -167,7 +225,6 @@ margin: 0;
 	margin: 0 auto;
 	font-size: 24px;
 	font-weight: bolder;
-	padding-bottom: 20px;
 }
 .title h3:after {
 	content: "";
@@ -176,6 +233,8 @@ margin: 0;
 	border-bottom: 6px solid #af9f73;
 	margin: 10px auto 0 auto;
 }
+
+/* mobile Home content */
 .promo01 {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -242,7 +301,7 @@ a:hover .ProHome2_screen .top {
 }
 
 .promo03 {
-		margin-top: 10px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 .ProHome3_screen {
@@ -273,11 +332,211 @@ a:hover .ProHome3_screen .top {
 	background-color: rgba(181, 51, 37, .8);
 	opacity: 1;
 }
- @media screen and (min-width:600px){
-	.main_Description{
-		max-width: 70%;
+/* mobile about content */
+@media screen and (min-width:344px){
+ .novBox {
+	 max-width: 60%;
+ }
+
+}
+
+.novaBox {
+	position: relative;
+	margin: 0 auto;
+	max-width: 671px;
+	padding: 0;
+
+}
+
+.novaBox h3 {
+	font-size: 24px;
+	font-weight: 800;
+	padding-top: 80px;
+	width: 377px;
+	height: 377px;
+	border-radius: 50%;
+	background-color: #92845e;
+	margin: 0 auto;
+}
+
+.novaBox img {
+	border-radius: 50px;
+	position: absolute;
+	height: 485px;
+	top: 120px;
+	left: 15px;
+}
+
+.aboutText {
+		margin: 0 auto;
+		width: 80%;
+		margin-top: 230px;
+		margin-bottom: 20px;
+}
+.aboutText p {
+	color: #000;
+	padding: 0px 30px;
+	line-height: 1.5;
+	margin: 0 auto;
+}
+
+
+/* Advertisment content */
+
+
+.Adverbox {
+	padding: 0 36px;
+	margin-bottom: 20px;
+}
+
+video {
+width: 100%;
+border: 5px solid #92845e;
+text-decoration: none;
+}
+
+/* product content */
+.proBigCon {
+	margin: 0 auto;
+		padding: 0px 20px;
+}
+
+@media screen and (max-width:600px) {
+	.proBigCon {
+		max-width: 90%;
 	}
 }
+
+#productImageCon {
+	max-width: 792px;
+	height: 612px;
+	margin: 0 auto;
+	border-radius: 65px;
+	border: 0px solid #b53325;
+	overflow: hidden;
+
+}
+
+
+#beerImages {
+	position: relative;
+	width: 3960px;
+	transition: all .5s;
+}
+#beerImages img { float: left;}
+
+.sigilContainer {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(../images/productMenu.jpg);
+	background-repeat: no-repeat;
+	transition: transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz--transform .3s;
+}
+
+.balla { background-position: 0px 0px; }
+.balla:hover {background-position: 0px -60px; }
+
+.red { background-position: -60px 0px; }
+.red:hover {background-position: -60px -60px; }
+
+.light { background-position: -120px 0px; }
+.light:hover {background-position: -120px -60px; }
+
+.india { background-position: -180px 0px; }
+.india:hover {background-position: -180px -60px; }
+
+.set { background-position: -240px 0px; }
+.set:hover {background-position: -240px -60px; }
+
+#bottomNav ul {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+#bottomNav li  {
+	padding: 0px 5px;
+}
+
+h4 {
+	color: #92845e;
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 20px;
+	line-height: 1.5;
+}
+.pro-info {
+	color: #000;
+	line-height: 1.3;
+	max-width: 671px;
+	height: 210px;
+	padding: 12px 70px 0px 70px;
+	margin: 0 auto;
+}
+/* contact content */
+#formMessage {
+max-width: 768px;
+padding: 10px 30px;
+margin-bottom: 10px;
+text-align: left;
+font-size: 16px;
+font-weight: bold;
+color: #92845e;
+}
+
+
+input {
+		border-radius: 23px;
+		border-color: #b53325;
+		border-style: solid;
+		width:100%;
+		height: 45px;
+		margin-bottom: 20px;
+	}
+
+textarea {
+	border-radius: 23px;
+	border-color: #b53325;
+	border-width: 2px;
+	border-style: solid;
+	width:100%;
+	height: 169px;
+}
+
+#send button {
+	background-color: #92845e;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 30px;
+	padding: 10px 20px;
+	border-style: solid;
+	border-color: #92845e;
+}
+
+#send button:hover {
+	background-color: #b53325;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 30px;
+	padding: 10px 20px;
+	border-style: solid;
+	border-color: #b53325;
+}
+#send {
+	text-align: right;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+/* footer */
+
 .social_Nav ul {
 	display: flex;
 	flex-flow: row nowrap;
@@ -292,6 +551,17 @@ a:hover .ProHome3_screen .top {
 	font-weight: bolder;
 	font-size: 24px;
 }
+.wrapper {
+	width: 83px;
+	height: 83px;
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.wrapper object {
+	width: 100%;
+}
+
 .footerNav {
 	background-color: #af9f73;
 }
@@ -299,6 +569,8 @@ a:hover .ProHome3_screen .top {
 	padding-top: 20px;
 	height: 50px;
 }
+
+/* webpageHeader */
 
 @media screen and (min-width:840px){
 	.boxContainer{
@@ -311,9 +583,6 @@ a:hover .ProHome3_screen .top {
 		grid-template-columns: repeat(12, minmax(0,1fr));
 		grid-column-gap: 15px;
 	}
-	#topMenu {
-	  display: none
-	}
 
 	.LogoImage {
 	  order:-1;
@@ -322,8 +591,12 @@ a:hover .ProHome3_screen .top {
 	  background-color: #b53325;
 	}
 
+	#topMenu {
+	  display: none
+	}
 
-/* navigation */
+
+/* Webnavigation */
 
 #burgerCon {
 	display: flex;
@@ -349,7 +622,7 @@ a:hover .ProHome3_screen .top {
 	padding: 20px;
 	background-color: #b53325;
 	display: inline;
-		margin: 0;
+	margin: 0;
 }
 
 #burgerCon li a:hover {
@@ -376,7 +649,9 @@ main, header, footer {
 	.main_Description p {
 		font-size: 18px;
 	}
-	/* content */
+
+
+	/* Webcontent title */
 
 .title{
 	grid-column: 1/-1;
@@ -397,6 +672,8 @@ main, header, footer {
 	border-bottom: 6px solid #af9f73;
 	margin: 10px auto 0 auto;
 	}
+
+
 .promo01 {
 	  grid-column: 1/5;
 	  margin-bottom: 50px;
@@ -493,6 +770,67 @@ a:hover .ProHome3_screen .top {
 	  background-color: rgba(181, 51, 37, .8);
 	  opacity: 1;
 	}
+
+/* about contents */
+.ballaHistory {
+	grid-column: 3/11;
+	margin-bottom: 50px;
+}
+
+
+.blew {
+	grid-column: 3/11;
+	margin-bottom: 50px;
+}
+
+
+/* advertisement content */
+
+.AdverVideo {
+	grid-column: 2/12;
+	margin-bottom: 50px;
+}
+
+/* product content */
+
+.ProductCon {
+	grid-column: 2/12;
+}
+
+.productDes {
+	grid-column: 2/12;
+	margin-bottom: 50px;
+}
+h4 {
+	color: #92845e;
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 20px;
+	line-height: 1.5;
+}
+.pro-info {
+	color: #000;
+	font-size: 24px;
+	line-height: 1.3;
+	height: 300px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+/* contact form message */
+.formCon{
+	grid-column: 3/11;
+	margin-bottom: 50px;
+}
+
+#send button {
+	padding: 15px 40px;
+	border-radius: 39px;
+}
+#send button:hover{
+	padding: 15px 40px;
+	border-radius: 39px;
+}
+	/* mobileFooter */
 
 .footerNav {
 	grid-column: 1/-1;
